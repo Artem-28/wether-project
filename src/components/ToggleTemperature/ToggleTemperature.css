@@ -1,0 +1,46 @@
+.ToggleTemperature {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+}
+
+.ToggleTemperature > span {
+    height: 22px;
+    margin-right: 9px;
+}
+
+.ToggleTemperature .toggle {
+    display: flex;
+    width: 77px;
+    height: 29px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    overflow: hidden;  
+}
+
+.ToggleTemperature .toggle label {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+   
+}
+.ToggleTemperature .toggle input {
+    display: none;
+}
+
+.ToggleTemperature .toggle input:checked + label {
+    color:  rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+
+
+@media screen and (max-device-width:480px) {
+    .hidden { display: none; }
+}

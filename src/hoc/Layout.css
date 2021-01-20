@@ -1,0 +1,43 @@
+.Layout {
+    height: 100vh;
+    border: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sunnyTheme { background: #498CEC; }
+.murkyTheme { background: #7290B9; }
+
+.Layout .info {
+    width: 80%;
+    margin-bottom: 90px;
+}
+
+.Layout .select {
+    width: 85%;
+    height: 100px;
+    margin-top: 65px;
+    margin-left: 100px;
+}
+
+.Layout .toggle {
+    position: absolute;
+    right: 6%;
+    top: 8%;
+}
+
+.backout {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (max-device-width:480px) {
+    .Layout .select { width: 80%; margin-left: 0; }
+    .Layout .toggle { right: 8%; top: 4%; }
+}

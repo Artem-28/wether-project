@@ -1,0 +1,26 @@
+.Temperatupe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+.Temperatupe .wrapper {
+    display: flex;
+    align-items: center;
+}
+.Temperatupe .wrapper .logo { background-size: cover; }
+.Temperatupe .wrapper .logo img {
+    width: 235px;
+    height: 235px;
+}
+.Temperatupe .wrapper span { font-size: 180px; }
+.Temperatupe .title { font-size: 25px; }
+
+@media screen and (max-device-width:480px) {
+    .Temperatupe .wrapper span { font-size: 120px;}
+    .Temperatupe .wrapper .logo img {
+        width: 155px;
+        height: 155px;
+    }
+    .Temperatupe .title { font-size: 25px; }
+}

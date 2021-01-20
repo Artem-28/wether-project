@@ -1,0 +1,73 @@
+.SearchCity {
+    width: 520px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.SearchCity input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 30px;
+    opacity: 1;
+}
+
+.SearchCity input:focus {
+    outline: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.SearchCity .datalist {
+    width: 580px;
+    max-height: 600px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    overflow: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.SearchCity .datalist span {
+    border: 1px solid white;
+    transition: all 0.3s;
+    padding: 30px;
+    
+}
+
+.SearchCity .datalist span:hover {
+    background:  rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.SearchCity .button {
+    position: absolute;
+    font-size: 30px;
+   
+    color: rgba(16, 134, 255, 1);
+    cursor: pointer;
+    border: none;
+    background: none;
+    top: 30px;
+    right: 0;
+  
+}
+.SearchCity .button:disabled {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+
+
+@media screen and (max-device-width:480px) {
+    .SearchCity { width: 92%; height: 40px; }
+    .SearchCity .datalist { width: 108%; }
+}

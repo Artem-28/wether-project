@@ -1,0 +1,45 @@
+.SelectCity {
+    display: flex;
+    flex-direction: column;
+}
+
+.SelectCity  .cityName {
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+}
+
+.SelectCity .buttons {
+    font-size: 18px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s;
+}
+
+.SelectCity .buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SelectCity .buttons div:last-child::before{
+    content: url('../../appFiles/path/Path.svg');
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.SelectCity .buttons div:hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.SelectCity .buttons div:last-child:hover::before   {
+    content: url('../../appFiles/path/PathHover.svg');
+} 
+
+@media screen and (max-device-width:480px) {
+    .SelectCity  .cityName { font-size: 30px;}
+    .SelectCity .buttons { font-size: 15px; }
+    
+}
