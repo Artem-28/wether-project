@@ -17,10 +17,10 @@
 .Temperatupe .title { font-size: 25px; }
 
 @media screen and (max-device-width:480px) {
-    .Temperatupe .wrapper span { font-size: 120px;}
+    .Temperatupe .wrapper span { font-size: 80px;}
     .Temperatupe .wrapper .logo img {
-        width: 155px;
-        height: 155px;
+        width: 100px;
+        height: 100px;
     }
     .Temperatupe .title { font-size: 25px; }
 }

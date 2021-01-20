@@ -38,6 +38,14 @@
 }
 
 @media screen and (max-device-width:480px) {
-    .Layout .select { width: 80%; margin-left: 0; }
-    .Layout .toggle { right: 8%; top: 4%; }
+    .Layout .select { 
+        margin-top: 20px;
+        width: 90%; 
+        margin-left: 0; 
+    }
+    .Layout .toggle { right: 8%; top: 26px; }
+    .Layout .info {
+        width: 90%;
+        margin-bottom: 0px;
+    }
 }

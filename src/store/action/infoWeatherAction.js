@@ -5,7 +5,7 @@ import { GET_INFO_WEATHER, GET_WEATHER } from './actionTypes'
 
 const api = {
     key: '075000182b1613b054c33c7e7f19f1a3', 
-    base: 'http://api.openweathermap.org/data/2.5/'
+    base: 'https://api.openweathermap.org/data/2.5/'
 }
 
 
